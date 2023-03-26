@@ -1,38 +1,404 @@
-.App {
-  text-align: center;
+/* Background and links */
+.pure-dark {
+  background-color: rgb(16, 16, 16);
+  color: #fff;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+a:visited {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Navigation bar */
+.navbar-width {
+  width: 72% !important;
+}
+.navbar-brand {
+  width: 60px;
+}
+.menu-icon.active {
+  color: rgb(155, 0, 255);
+}
+.navbar-dark .nav-link-contact.active > span {
+  color: rgb(155, 0, 255);
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Heading */
+.heading {
+  padding-top: 70px;
+  /* padding-bottom: 120px; */
+  background-color: rgb(16, 16, 16);
+  color: white;
+}
+.custom-container {
+  width: 72%;
+  margin: auto;
+}
+.heading-text {
+  padding-top: 30px;
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: center; */
+}
+.purple-text {
+  color: rgb(155, 0, 255);
+}
+.alpha-text {
+  display: inline-block;
+}
+.alpha-line {
+  border: none;
+  border-bottom: 3px solid #fff;
+  margin: 1rem 0;
+  display: inline-block;
+  width: 100px;
+  margin-left: 80px;
+}
+.purple-circle {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(155, 0, 255);
+  border-radius: 100%;
+  display: inline-block;
+  position: absolute;
+  /* left: 110px;
+  top: 0; */
+  z-index: 0;
+  transition: all 0.3s ease;
+}
+
+/* Get Started button */
+.get-started {
+  position: relative;
+}
+.get-started-container {
+  position: absolute;
+  top: 70%;
+  left: 20%;
+  /* transform: translate(-50%, -50%); */
+}
+.get-started-text {
+  z-index: 1;
+  position: absolute;
+  font-size: 14px;
+  width: 100px;
+  height: 30px;
+  text-decoration: none;
+  color: white;
+  padding-top: 3px;
+  padding-right: 2px;
+}
+.get-started:hover .purple-circle {
+  border-radius: 5px;
+  width: 100px;
+  border-color: #fff;
+  border: 2px solid;
+  background-color: transparent;
+  color: #fff;
+  font-weight: bold;
+}
+.get-started-link:hover {
+  font-weight: bold;
+}
+
+/* Laptop image */
+.laptop {
+  transform: scale(0.7);
+}
+
+/* Text and gallery */
+.img-container {
+  position: relative;
+}
+.txt-container {
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+}
+.txt-container p {
+  color: white;
+  font-size: 38px;
+  font-weight: 600;
+  text-align: left;
+  line-height: 1;
+}
+.gallery-link-container {
+  position: absolute;
+  top: 76%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+.gallery-purple-circle {
+  width: 25px;
+  height: 25px;
+  background-color: rgb(155, 0, 255);
+  border-radius: 100%;
+  display: inline-block;
+  position: absolute;
+  z-index: 0;
+  transition: all 0.3s ease;
+}
+.gallery-link-text {
+  z-index: 1;
+  position: absolute;
+  font-size: 14px;
+  width: 100px;
+  height: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+.gallery-link-text:hover {
+  color: #fff;
+  font-weight: 500;
+}
+
+.gallery-link-container:hover .gallery-purple-circle {
+  border-radius: 5px;
+  width: 100px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+.testimonials {
+  background-color: #fff;
+}
+.testimonials-text {
+  text-align: center;
+}
+.carousel-height {
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+}
+.clients-logos {
+  margin: auto;
+  width: 72%;
+}
+/* Target the previous and next buttons */
+.black-carousel-control-prev-icon,
+.black-carousel-control-next-icon {
+  filter: invert(1);
+}
+.black-carousel-indicators > button {
+  background-color: black !important;
+}
+.clints-logo {
+  width: 150px;
+}
+.about-us-container {
+  width: 72% !important;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.about-us-logo {
+  width: 60px;
+}
+.badges-container {
+  display: flex;
+}
+.custom-badge {
+  background-color: #212121;
+  display: flex;
+  width: 70px;
+  height: 70px;
+  justify-content: center;
+  align-content: center;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 0.8;
+}
+.custom-badge h5 {
+  margin-bottom: 0;
+  font-weight: 800;
+}
+.custom-badge h6 {
+  margin-bottom: 0;
+  font-weight: 200;
+}
+.custom-badge span {
+  font-weight: 100;
+  font-size: smaller;
+}
+.consultation {
+  text-align: center;
+}
+.services-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(16, 16, 16);
+  color: #fff;
+}
+.purple-circle-form {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(155, 0, 255);
+  border-radius: 100%;
+  display: inline-block;
+  z-index: 0;
+  left: 33%;
+  transition: all 0.3s ease;
+  position: absolute;
+}
+.form-link-text {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  height: 50px;
+  position: relative;
+}
+.go-to-form-text {
+  text-decoration: none !important;
+  color: #fff !important;
+  position: absolute;
+}
+.get-started-form {
+  display: flex;
+  justify-content: center;
+}
+.go-to-form-link:hover {
+  font-weight: bold;
+}
+.go-to-form-link:hover .purple-circle-form {
+  border-radius: 5px;
+  width: 100px;
+  border-color: #fff;
+  border: 2px solid;
+  background-color: transparent;
+  color: #fff;
+  font-weight: bold;
+}
+.scroll-to-top-button {
+  background: transparent;
+  border: none !important;
+}
+.btn-up-container {
+  margin: auto;
+  text-align: center;
+}
+.btn-up {
+  color: #fff;
+}
+.Portifolio-selector {
+  text-align: center;
+  margin-top: 20px;
+}
+.portifolio-selector-height {
+  height: 120px;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  margin-bottom: 75px;
+}
+.category-item {
+  font-weight: 700;
+  font-size: 32px;
+}
+.portifolio-container {
+  width: 72%;
+  margin: auto;
+}
+/* animation  */
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.card-animation.visible {
+  animation: slide-in 2s ease-out;
+}
+
+/* responsive */
+@media only screen and (max-width: 768px) {
+  .heading {
+    padding-top: 10px;
+  }
+  .alpha-text {
+    max-width: 290px;
+  }
+  .alpha-line {
+    margin-left: 35px;
+  }
+  .container {
+    width: 100% !important;
+  }
+  .get-started {
+    margin-right: 170px;
+  }
+  .get-started-container {
+    left: 35%;
+  }
+  .carousel-height {
+    width: 100%;
+  }
+  .badges-container {
+    padding-top: 40px;
+  }
+  .right-badges {
+    display: flex;
+  }
+  .left-badegs {
+    display: flex;
+  }
+  .right-badges {
+    display: flex;
+  }
+  .badges-container {
+    justify-content: center;
+  }
+  .about-us-container {
+    text-align: center;
+  }
+  .about-us-text {
+    font-size: smaller;
+    width: 80% !important;
+    margin: auto;
+  }
+  .portifolio-selector-height {
+    width: 100%;
+  }
+  .category-text-size {
+    font-size: 24px;
+  }
+  .clients-logos {
+    width: 80%;
+  }
+  .clints-logo {
+    width: 100px;
+  }
+  .laptop {
+    margin-top: 3rem;
+  }
+  .txt-container p {
+    font-size: 1.8rem;
+  }
+  .txt-container {
+    top: 35%;
+  }
+  .gallery-link-container {
+    left: 57%;
+  }
+  .testimonial-txt {
+    font-size: smaller;
   }
 }
